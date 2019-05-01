@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title> QUIZ</title>
+    <link rel="stylesheet" href="style.css">
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="slideshow.js"></script>
+  </head>
+ <body onload="currentSlide(1)">
+<header>
+	<div class="container">
+	<div id="branding">
+	  <h1> <span class="highlight"> Quiz </span>On Java </h1>
+	</div>
+	<nav>
+	  <ul>
+		<li><button id="SubmitBtn"type="button" class="button" onclick="submitQuiz()">Submit </button></li>
+		<li><button id="AbortBtn" type="button" class="button" onclick="abortQuiz()">Abort</button></li>
+		<li><button id="ReviewBtn" type="button" class="button" onclick="Review()">Review</button></li>
+		<li><div id="Timer">Time left = <span id="timer" style="color:white;"></span></div></li>
+	  </ul>
+	</nav>
+	</div>
+</header>
+	
+<div id="QuizSection">	
+<section id="showcase  ">
+<!-- Slideshow container -->
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade relative leftalign">
+    <div class="numbertext">1 / 10</div><br><br>
+    <h4>Question 1</h4>
+	<h2>What is a class in java?</h2>
+		<form>
+			<input type="radio" name="question1"  value="right">A - A class is a blue print from which individual objects are created. A class can contain fields and methods to describe the behavior of an object<br>
+			<input type="radio" name="question1"  value="wrong">B - class is a special data type<br>
+			<input type="radio" name="question1"  value="wrong">C - Class is used to allocate memory to a data type.<br>
+			<input type="radio" name="question1"  value="wrong">D - None of above<br>
+		</form>
+		</br></br>
+		<button type="button" class="button review_button" onclick="Review1()">Review</button>
+		<button type="button" class="button answer_button" onclick="Answer1()">Answer</button>
+					
+					<div id="0" style="display:none">
+					<h3>Answer of Question 1:</h3>
+					<input type="radio"  value="right" checked>A - A class is a blue print from which individual objects are created. A class can contain fields and methods to describe the behavior of an object<br>	
+					</div>
+			</div>
+</section>
+<section id="showcase  ">
+<!-- Slideshow container -->
+  <div class="mySlides fade relative leftalign">
+    <div class="numbertext">2 / 10</div><br><br>   
+	<h4>Question 2 (Fill in the blanks)</h4>
+	<h2>__________ keyword is used to reference to the current object.</h2>
+		<form>
+			<input type="text" id="user_ans_question2" name="question2"><br>
+		</form>
+		</br></br>
+		<button type="button" class="button review_button" onclick="Review2()">Review</button>
+		<button type="button" class="button answer_button" onclick="Answer2()">Answer</button>
+  
+  
+					<div id="1" style="display:none">
+					<h3>Answer of Question 2:</h3>
+					<h5>This</h5>
+					</div>
+  </div>
+  </section>
+
+<section id="showcase  ">
+  <div class="mySlides fade relative leftalign">
+    <div class="numbertext">3 / 10</div><br><br>
+    <h4>Question 3</h4>
+	<h2>What is the default value of byte variable?</h2>
+		<form>
+			<input type="radio" name="question3" value="right" >A - 0<br>
+			<input type="radio" name="question3" value="wrong">B - 0.0<br>
+			<input type="radio" name="question3" value="wrong">C - null<br>
+			<input type="radio" name="question3" value="wrong">D - not defined<br>
+		</form>
+		</br></br>
+		<button type="button" class="button review_button" onclick="Review3()">Review</button>
+		<button type="button" class="button answer_button" onclick="Answer3()">Answer</button>
+		
+					<div id="2" style="display:none">
+					<h3>Answer of Question 3:</h3>
+					<input type="radio" value="right" checked>A - 0<br>
+					</div>
+  </div>
+</section>
+
+<section id="showcase  ">
+  <div class="mySlides fade relative leftalign">
+    <div class="numbertext">4 / 10</div><br><br>
+    <h4>Question 4</h4>
+	<h2>Which of the following is true about String?</h2>
+		<form>
+			<input type="radio" name="question4" value="wrong">A - String is mutable.<br>
+			<input type="radio" name="question4" value="right">B - String is immutable.<br>
+			<input type="radio" name="question4" value="wrong">C - String is a data type.<br>
+			<input type="radio" name="question4" value="wrong">D - None of the above.<br>
+		</form>
+		</br></br>
+		<button type="button" class="button review_button" onclick="Review4()">Review</button>
+		<button type="button" class="button answer_button" onclick="Answer4()">Answer</button>
+					<div id="3" style="display:none">
+						<h3>Answer of Question 4:</h3>
+						<input type="radio" value="right" checked>B - String is immutable.<br>
+					</div>
+  </div>
+  </section>
+
+<section id="showcase  ">
+  <div class="mySlides fade relative leftalign">
+    <div class="numbertext">5 / 10</div><br><br>
+    <h4>Question 5</h4>
+	<h2>Consider the statement "x = (a > b) ? a : b"; then the value of x is 27, if a = 18 and b = 27.<h2>
+		<form>
+			<input type="radio" name="question5" value="right">A - True<br>
+			<input type="radio" name="question5" value="wrong">B - False<br>
+		</form>
+		</br></br>
+		<button type="button" class="button review_button" onclick="Review5()">Review</button>
+		<button type="button" class="button answer_button" onclick="Answer5()">Answer</button>
+					<div id="4" style="display:none">
+						<h3>Answer of Question 5:</h3>
+						<input type="radio" value="right" checked>A - True<br>
+					</div>
+  </div>
+  </section>
+  
+<section id="showcase  ">
+
+  <div class="mySlides fade relative leftalign">
+    <div class="numbertext">6 / 10</div><br><br>
+    <h4>Question 6</h4>
+	<h2>What is JRE?</h2>
+		<form>
+			<input type="radio" name="question6" value="wrong">A - JRE is a java based GUI application.<br>
+			<input type="radio" name="question6" value="wrong">B - JRE is an application development framework.<br>
+			<input type="radio" name="question6" value="right">C - JRE is an implementation of the Java Virtual Machine which executes Java programs.<br>
+			<input type="radio" name="question6" value="wrong">D-None of the above<br>
+		</form>
+		</br></br>
+		<button type="button" class="button review_button" onclick="Review6()">Review</button>
+		<button type="button" class="button answer_button" onclick="Answer6()">Answer</button>
+					<div id="5" style="display:none">
+						<h3>Answer of Question 6:</h3>
+			<input type="radio"  value="right" checked>C - JRE is an implementation of the Java Virtual Machine which executes Java programs.<br>
+					</div>
+  </div>
+</section>
+
+<section id="showcase  ">
+  <div class="mySlides fade relative leftalign">
+    <div class="numbertext">7 / 10</div><br><br>
+    <h4>Question 7</h4>
+	<h2>What is true about the sysntax of java main method?</h2>
+		<form>
+			<input type="radio" name="question7" value="right">A - public void main(String [] args<br>
+			<input type="radio" name="question7" value="wrong">B - public void main(string [] args)<br>
+			<input type="radio" name="question7" value="wrong">C - public void main()<br>
+			<input type="radio" name="question7" value="wrong">D - public class void main(String [] args)<br>
+		</form>
+		</br></br>
+		<button type="button" class="button review_button" onclick="Review7()">Review</button>
+		<button type="button" class="button answer_button" onclick="Answer7()">Answer</button>
+					<div id="6" style="display:none">
+						<h3>Answer of Question 7:</h3>
+						<input type="radio" value="right" checked>A - public void main(String [] args<br>
+					</div>
+  </div>
+  </section>
+<section id="showcase  ">
+
+  <div class="mySlides fade relative leftalign">
+    <div class="numbertext">8 / 10</div><br><br>
+    <h4>Question 8</h4>
+	<h2>Objects of a subclass can be assigned to a super class reference.</h2>
+		<form>
+			<input type="radio" name="question8" value="right">A - True<br>
+			<input type="radio" name="question8" value="wrong">B - False<br>
+		</form>
+		</br></br>
+		<button type="button" class="button review_button" onclick="Review8()">Review</button>
+		<button type="button" class="button answer_button" onclick="Answer8()">Answer</button>
+					<div id="7" style="display:none">
+						<h3>Answer of Question 8:</h3>
+						<input type="radio" value="right" checked>A - True<br>
+					</div>
+  </div>
+</section>
+
+<section id="showcase  ">
+  <div class="mySlides fade relative leftalign">
+    <div class="numbertext">9 / 10</div><br><br>
+    <h3>Question 9 (Fill in the blanks)</h3>
+	<h2>__________  variables cannot be changed after initialization.</h2>
+		<form>
+			<input type="text" id="user_ans_question9" name="question9"><br>
+		</form>
+		</br></br>
+		<button type="button" class="button review_button" onclick="Review9()">Review</button>
+		<button type="button" class="button answer_button" onclick="Answer9()">Answer</button>
+					<div id="8" style="display:none">
+						<h3>Answer of Question 9:</h3>
+						<h3>Final</h3>
+					</div>
+  </div>
+</section>
+
+<section id="showcase  ">
+  <div class="mySlides fade relative leftalign">
+    <div class="numbertext">10 / 10</div><br><br>
+    <h4>Question 10</h4>
+	<h2>The modulus operator (%) in Java can be used only with variables of integer type.</h2>
+		<form>
+			<input type="radio" name="question10" value="wrong" >A - True<br>
+			<input type="radio" name="question10" value="right">B - False<br>
+		</form>
+		</br></br>
+		<button type="button" class="button review_button" onclick="Review10()">Review</button>
+		<button type="button" class="button answer_button" onclick="Answer10()">Answer</button>
+					<div id="9" style="display:none">
+						<h3>Answer of Question 10:</h3>
+						<input type="radio"  value="right" checked>B - False<br>
+						
+					</div>
+  </div>
+  </section>
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+<br>
+</section>
+<!-- The dots/circles -->
+<div style="text-align:center" style ="position:absolute">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 	
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+  <span class="dot" onclick="currentSlide(7)"></span> 
+  <span class="dot" onclick="currentSlide(8)"></span> 
+  <span class="dot" onclick="currentSlide(9)"></span> 
+  <span class="dot" onclick="currentSlide(10)"></span> 
+</div>
+</div>
+<div id="ResultSection" style="display:none">
+	<section id="showcase">
+		<div class="container">
+			<font color="#FC4949"><h2 id="Note"></h2></font>
+			<font color="#808080"><h1 id="Result"></h1></font>
+		</div>
+	</section>
+</div>
+
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="slideshow.js"></script>
+	
+  </body>
+</html>
